@@ -1,0 +1,13 @@
+inherit_from:
+  - .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+    - 'spec/integration/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
